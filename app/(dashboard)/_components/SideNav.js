@@ -27,8 +27,8 @@ export default function SideNav() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="shadow-sm border-r h-full">
-      <div className=" border-b pl-10 p-5">
+    <div className=" shadow-md h-full shadow-black/50">
+      <div className=" pl-10 p-5">
         <Image src="/logo.png" width={50} height={10} alt="logo"></Image>
       </div>
       <div className="flex flex-col  justify-center items-center">
@@ -37,7 +37,7 @@ export default function SideNav() {
             onClick={() => setActiveIndex(data.id)}
             key={data.id}
             className={`flex gap-2 p-4 pl-3 px-0 hover:bg-teal-600 w-full text-gray-500 hover:text-white ${
-              activeIndex === data.id ? "bg-teal-400 text-white" : null
+              activeIndex === data.id ? "bg-teal-500 text-white" : null
             }`}
           >
             <data.icon />

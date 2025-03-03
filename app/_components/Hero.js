@@ -3,8 +3,8 @@ import Constant from "../_utils/Constant";
 
 export default function Hero() {
   return (
-    <section className="bg-white">
-      <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex ">
+    <section className="bg-gray-800 ">
+      <div className="mx-auto  flex max-w-screen-xl px-4 py-32 lg:flex  ">
         <div className="mx-auto max-w-xl text-center">
           <h1 className="text-3xl font-extrabold sm:text-5xl text-gray-900 text-center">
             <strong className="font-extrabold text-teal-700">Upload</strong>

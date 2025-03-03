@@ -3,8 +3,8 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="bg-white">
-      <div className="mx-auto flex h-16 max-w-screen-xxl items-center gap-8 px-4 sm:px-6 lg:px-8 border-b">
+    <header className="relative bg-gray-800 shadow-md shadow-black/50">
+      <div className="mx-auto flex h-16 max-w-screen-xxl items-center gap-8 px-4 sm:px-6 lg:px-8  ">
         <a className="block text-teal-600" href="#">
           <span className="sr-only">Home</span>
           <Image src="/logo.png" width={50} height={10} alt="logo"></Image>
@@ -15,7 +15,7 @@ export default function Header() {
             <ul className="flex items-center gap-6 text-sm">
               <li>
                 <a
-                  className="text-gray-500 transition hover:text-gray-500/75"
+                  className="text-gray-200 transition hover:text-teal-400"
                   href="#"
                 >
                   {" "}
@@ -25,7 +25,7 @@ export default function Header() {
 
               <li>
                 <a
-                  className="text-gray-500 transition hover:text-gray-500/75"
+                  className="text-gray-200 transition hover:text-teal-400"
                   href="#"
                 >
                   {" "}
@@ -35,7 +35,7 @@ export default function Header() {
 
               <li>
                 <a
-                  className="text-gray-500 transition hover:text-gray-500/75"
+                  className="text-gray-200 transition hover:text-teal-400"
                   href="#"
                 >
                   {" "}
@@ -45,7 +45,7 @@ export default function Header() {
 
               <li>
                 <a
-                  className="text-gray-500 transition hover:text-gray-500/75"
+                  className="text-gray-200 transition hover:text-teal-400"
                   href="#"
                 >
                   {" "}
@@ -62,13 +62,6 @@ export default function Header() {
                 href="#"
               >
                 Get Started
-              </a>
-
-              <a
-                className="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block"
-                href="#"
-              >
-                Register
               </a>
             </div>
 
