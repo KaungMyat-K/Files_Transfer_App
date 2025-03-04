@@ -1,0 +1,23 @@
+import { X } from "lucide-react";
+import Image from "next/image";
+import React from "react";
+
+export default function FilePreview({ file, removeFile }) {
+  return (
+    <div className="flex items-center gap-2 justify-between mt-5 border rounded-md p-2 border-teal-400">
+      <div className="flex items-center p-2">
+        <Image src="/file.png" width={50} height={10} alt="file" />
+        <div className="text-left">
+          <h2 className="text-white">{file?.name}</h2>
+          <h2 className="text-[12px] text-gray-500">
+            {file?.type} / {(file.size / 1024 / 1024).toFixed(2)} MB
+          </h2>
+        </div>
+      </div>
+      <X
+        onClick={() => removeFile()}
+        className="text-red-500 hover:text-red-600 cursor-pointer"
+      />
+    </div>
+  );
+}
